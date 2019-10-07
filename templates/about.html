@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <title>About</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="vCard template project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'styles/bootstrap-4.1.2/bootstrap.min.css' %}">
+    <link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet"  href="{% static 'plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'%}">
+    <link rel="stylesheet" href="{% static 'styles/main_styles.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/responsive.css' %}">
+</head>
+<body>
+
+<div class="super_container">
+
+    <!-- Header -->
+
+    <header class="header">
+        <div class="header_content d-flex flex-row align-items-center justify-content-start">
+            <div class="logo">Danyshman<span>.</span>CV</div>
+            <div class="main_nav d-flex flex-row align-items-end justify-content-start">
+                <ul class="d-flex flex-row align-items-center justify-content-start">
+                    <li class="active"><a href="{% url 'my_resume:index' %}">About</a></li>
+                    <li><a href="{% url 'my_resume:skills' %}">Skills</a></li>
+                    <li><a href="{% url 'my_resume:experience' %}">Experience</a></li>
+                    <li><a href="{% url 'my_resume:education' %}">Education</a></li>
+                </ul>
+                <div class="header_button ml-auto">
+                    <a href="#">Available for freelance work</a>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="menu">
+                <div class="menu_content d-flex flex-row align-items-start justify-content-end">
+                    <div class="hamburger ml-auto">menu</div>
+                    <div class="menu_nav text-right">
+                        <ul>
+                            <li><a href="{% url 'my_resume:index' %}">About</a></li>
+                            <li><a href="{% url 'my_resume:skills' %}">Skills</a></li>
+                            <li><a href="{% url 'my_resume:experience' %}">Experience</a></li>
+                            <li><a href="{% url 'my_resume:education' %}">Education</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content_container">
+        <div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
+
+            <!-- General Information -->
+            <div class="general_info d-flex flex-xl-column flex-md-row flex-column">
+                <div>
+                    <div class="general_info_image">
+                        <div class="background_image"
+                             style="background-image:url('{% static 'images/profileimg.jpeg' %}')"></div>
+                        <div class="header_button_2">
+                            <a href="#">Available for freelance work</a>
+                            <div class="d-flex flex-column align-items-center justify-content-center"><img
+                                    src="{% static 'images/download.png' %}" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="general_info_content">
+                    <div class="general_info_content_inner mCustomScrollbar" data-mcs-theme="minimal-dark">
+                        <ul class="general_info_list">
+                            <li class="d-flex flex-row align-items-center justify-content-start">
+                                <div class="general_info_icon d-flex flex-column align-items-start justify-content-center">
+                                    <img src="{% static 'images/icon_1.png' %}" alt=""></div>
+                                <div class="general_info_text">Name: <span>Danyshman Azamatov</span></div>
+                            </li>
+                            <li class="d-flex flex-row align-items-center justify-content-start">
+                                <div class="general_info_icon d-flex flex-column align-items-start justify-content-center">
+                                    <img src="{% static 'images/icon_loc.png' %}" alt=""></div>
+                                <div class="general_info_text">Location: <span>Bishkek Kyrgyzstan</span></div>
+                            </li>
+                            <li class="d-flex flex-row align-items-center justify-content-start">
+                                <div class="general_info_icon d-flex flex-column align-items-start justify-content-center">
+                                    <img src="{% static 'images/icon_2.png' %}" alt=""></div>
+                                <div class="general_info_text">Date of Birth: <span>May 25, 2000</span></div>
+                            </li>
+                            <li class="d-flex flex-row align-items-center justify-content-start">
+                                <div class="general_info_icon d-flex flex-column align-items-start justify-content-center">
+                                    <img src="{% static 'images/icon_3.png' %}" alt=""></div>
+                                <div class="general_info_text"><a href="mailto:contact@linque.com?subject=Job_Inquiry">danyshman.azamatov@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="d-flex flex-row align-items-center justify-content-start">
+                                <div class="general_info_icon d-flex flex-column align-items-start justify-content-center">
+                                    <img src="{% static 'images/icon_4.png' %}" alt=""></div>
+                                <div class="general_info_text">+996 554 555 933</div>
+                            </li>
+                        </ul>
+
+                        <!-- Social -->
+                        <div class="social_container">
+                            <ul class="d-flex flex-row align-items-start justify-content-start">
+                                <li><a href="https://api.whatsapp.com/send?phone=996554555933"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                                <li><a href="https://t.me/Danyshman"><i class="fa fa-telegram aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.facebook.com/danyshman.azamatov.5"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/daanyshman07/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+
+            <div class="main_content">
+                <div class="main_title_container d-flex flex-column align-items-start justify-content-end">
+                    <div class="main_subtitle">Backend Developer</div>
+                    <div class="main_title">Danyshman Azamatov</div>
+                </div>
+                <div class="main_content_scroll mCustomScrollbar" data-mcs-theme="minimal-dark">
+                    <div class="about_content">
+                        <div class="about_text">
+                            <p>I am an allround backend developer. I am a junior programmer with good knowledge of backend techniques. I love algorithms and data structures, also i like to solve algorithmic problems. I love spending time on fixing little details and optimizing web apps. Also I like working in a team, you will learn faster and much more. As the saying goes: 'Two heads are better than one'.
+                                Besides that, I trudge from 'Machine learning and Artificial Intelligence'. About my personal character: I am punctual, communicative, fast learner, responsible guy.
+                            </p>
+                        </div>
+
+                        <!-- Loaders -->
+
+                        <div class="loaders clearfix">
+
+                            <!-- Loader -->
+                            <div class="loader_container">
+                                <div class="loader_content text-center">
+                                    <div class="loader_title">Hard and Smart working</div>
+                                </div>
+                                <div class="loader" data-perc="0.87"></div>
+                            </div>
+
+                            <!-- Loader -->
+                            <div class="loader_container">
+                                <div class="loader" data-perc="0.83"></div>
+                                <div class="loader_content text-center">
+                                    <div class="loader_title">creativity</div>
+                                </div>
+                            </div>
+
+                            <!-- Loader -->
+                            <div class="loader_container">
+                                <div class="loader" data-perc="0.90"></div>
+                                <div class="loader_content text-center">
+                                    <div class="loader_title">Motivated and Self disciplined</div>
+                                </div>
+                            </div>
+
+                            <!-- Loader -->
+                            <div class="loader_container">
+                                <div class="loader" data-perc="0.95"></div>
+                                <div class="loader_content text-center">
+                                    <div class="loader_title">awesomeness</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'styles/bootstrap-4.1.2/popper.js' %}"></script>
+<script src="{% static 'styles/bootstrap-4.1.2/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/TweenMax.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/TimelineMax.min.js' %}"></script>
+<script src="{% static 'plugins/scrollmagic/ScrollMagic.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/animation.gsap.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/ScrollToPlugin.min.js' %}"></script>
+<script src="{% static 'plugins/progressbar/progressbar.js' %}"></script>
+<script src="{% static 'plugins/mCustomScrollbar/jquery.mCustomScrollbar.js' %}"></script>
+<script src="{% static 'plugins/easing/easing.js' %}"></script>
+<script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+</body>
+</html>
